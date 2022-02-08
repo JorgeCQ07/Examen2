@@ -152,6 +152,30 @@ Archivos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Archivos.cpp.s
 .PHONY : Archivos.cpp.s
 
+DisjointSets.obj: DisjointSets.cpp.obj
+.PHONY : DisjointSets.obj
+
+# target to build an object file
+DisjointSets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/DisjointSets.cpp.obj
+.PHONY : DisjointSets.cpp.obj
+
+DisjointSets.i: DisjointSets.cpp.i
+.PHONY : DisjointSets.i
+
+# target to preprocess a source file
+DisjointSets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/DisjointSets.cpp.i
+.PHONY : DisjointSets.cpp.i
+
+DisjointSets.s: DisjointSets.cpp.s
+.PHONY : DisjointSets.s
+
+# target to generate assembly for a file
+DisjointSets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/DisjointSets.cpp.s
+.PHONY : DisjointSets.cpp.s
+
 Edge.obj: Edge.cpp.obj
 .PHONY : Edge.obj
 
@@ -175,6 +199,30 @@ Edge.s: Edge.cpp.s
 Edge.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Edge.cpp.s
 .PHONY : Edge.cpp.s
+
+Graph.obj: Graph.cpp.obj
+.PHONY : Graph.obj
+
+# target to build an object file
+Graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Graph.cpp.obj
+.PHONY : Graph.cpp.obj
+
+Graph.i: Graph.cpp.i
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -212,9 +260,15 @@ help:
 	@echo ... Archivos.obj
 	@echo ... Archivos.i
 	@echo ... Archivos.s
+	@echo ... DisjointSets.obj
+	@echo ... DisjointSets.i
+	@echo ... DisjointSets.s
 	@echo ... Edge.obj
 	@echo ... Edge.i
 	@echo ... Edge.s
+	@echo ... Graph.obj
+	@echo ... Graph.i
+	@echo ... Graph.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

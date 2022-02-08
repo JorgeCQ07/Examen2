@@ -88,10 +88,22 @@
 		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/Archivos.h">
 			<Option target="Examen2"/>
 		</Unit>
+		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/DisjointSets.cpp">
+			<Option target="Examen2"/>
+		</Unit>
+		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/DisjointSets.h">
+			<Option target="Examen2"/>
+		</Unit>
 		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/Edge.cpp">
 			<Option target="Examen2"/>
 		</Unit>
 		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/Edge.h">
+			<Option target="Examen2"/>
+		</Unit>
+		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/Graph.cpp">
+			<Option target="Examen2"/>
+		</Unit>
+		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/Graph.h">
 			<Option target="Examen2"/>
 		</Unit>
 		<Unit filename="C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/main.cpp">

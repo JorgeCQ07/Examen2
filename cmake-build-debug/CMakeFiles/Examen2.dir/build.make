@@ -110,11 +110,41 @@ CMakeFiles/Examen2.dir/Edge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen2.dir/Edge.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\Edge.cpp" -o CMakeFiles\Examen2.dir\Edge.cpp.s
 
+CMakeFiles/Examen2.dir/DisjointSets.cpp.obj: CMakeFiles/Examen2.dir/flags.make
+CMakeFiles/Examen2.dir/DisjointSets.cpp.obj: ../DisjointSets.cpp
+CMakeFiles/Examen2.dir/DisjointSets.cpp.obj: CMakeFiles/Examen2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Examen2.dir/DisjointSets.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Examen2.dir/DisjointSets.cpp.obj -MF CMakeFiles\Examen2.dir\DisjointSets.cpp.obj.d -o CMakeFiles\Examen2.dir\DisjointSets.cpp.obj -c "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\DisjointSets.cpp"
+
+CMakeFiles/Examen2.dir/DisjointSets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Examen2.dir/DisjointSets.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\DisjointSets.cpp" > CMakeFiles\Examen2.dir\DisjointSets.cpp.i
+
+CMakeFiles/Examen2.dir/DisjointSets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen2.dir/DisjointSets.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\DisjointSets.cpp" -o CMakeFiles\Examen2.dir\DisjointSets.cpp.s
+
+CMakeFiles/Examen2.dir/Graph.cpp.obj: CMakeFiles/Examen2.dir/flags.make
+CMakeFiles/Examen2.dir/Graph.cpp.obj: ../Graph.cpp
+CMakeFiles/Examen2.dir/Graph.cpp.obj: CMakeFiles/Examen2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Examen2.dir/Graph.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Examen2.dir/Graph.cpp.obj -MF CMakeFiles\Examen2.dir\Graph.cpp.obj.d -o CMakeFiles\Examen2.dir\Graph.cpp.obj -c "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\Graph.cpp"
+
+CMakeFiles/Examen2.dir/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Examen2.dir/Graph.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\Graph.cpp" > CMakeFiles\Examen2.dir\Graph.cpp.i
+
+CMakeFiles/Examen2.dir/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen2.dir/Graph.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\Graph.cpp" -o CMakeFiles\Examen2.dir\Graph.cpp.s
+
 # Object files for target Examen2
 Examen2_OBJECTS = \
 "CMakeFiles/Examen2.dir/main.cpp.obj" \
 "CMakeFiles/Examen2.dir/Archivos.cpp.obj" \
-"CMakeFiles/Examen2.dir/Edge.cpp.obj"
+"CMakeFiles/Examen2.dir/Edge.cpp.obj" \
+"CMakeFiles/Examen2.dir/DisjointSets.cpp.obj" \
+"CMakeFiles/Examen2.dir/Graph.cpp.obj"
 
 # External object files for target Examen2
 Examen2_EXTERNAL_OBJECTS =
@@ -122,11 +152,13 @@ Examen2_EXTERNAL_OBJECTS =
 Examen2.exe: CMakeFiles/Examen2.dir/main.cpp.obj
 Examen2.exe: CMakeFiles/Examen2.dir/Archivos.cpp.obj
 Examen2.exe: CMakeFiles/Examen2.dir/Edge.cpp.obj
+Examen2.exe: CMakeFiles/Examen2.dir/DisjointSets.cpp.obj
+Examen2.exe: CMakeFiles/Examen2.dir/Graph.cpp.obj
 Examen2.exe: CMakeFiles/Examen2.dir/build.make
 Examen2.exe: CMakeFiles/Examen2.dir/linklibs.rsp
 Examen2.exe: CMakeFiles/Examen2.dir/objects1.rsp
 Examen2.exe: CMakeFiles/Examen2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Examen2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\adr20\Desktop\Codigos\Estructuras de Datos\Examen2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Examen2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Examen2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
