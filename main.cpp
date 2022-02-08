@@ -18,7 +18,7 @@ int main() {
     g.addEdge(6,7,1);
     g.addEdge(6,8,6);
     g.addEdge(7,8,7);
-
+//Hola
 
     cout<<"Edges of MST are \n";
     int mst_wt = g.kruskalMST();
