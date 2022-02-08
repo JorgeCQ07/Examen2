@@ -7,6 +7,9 @@
 
 
 #include "DisjointSets.h"
+#include "Edge.h"
+#include <sstream>
+
 
 #define INF 0x3f3f3f3f
 
@@ -15,12 +18,12 @@ class Graph {
 private:
     int V, E;
     vector< pair<int, iPair> > edges;
-    list<pair<int, int>>* adj;
+    list<pair<Edge, int>>* adj;
 public:
     Graph(int V, int E);
-    void addEdge(int u, int v, int w);
+    void addEdge(Edge u, Edge v, int w);
     int kruskalMST();
-    void shortestPath(int s);
+    string shortestPath(int s);
 };
 
 

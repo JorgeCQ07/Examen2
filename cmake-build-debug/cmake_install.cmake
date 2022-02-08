@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2
+# Install script for directory: C:/Users/jartu/CLionProjects/Examen2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/adr20/Desktop/Codigos/Estructuras de Datos/Examen2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jartu/CLionProjects/Examen2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
