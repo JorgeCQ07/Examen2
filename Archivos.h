@@ -4,19 +4,21 @@
 
 #ifndef EXAMEN2_ARCHIVOS_H
 #define EXAMEN2_ARCHIVOS_H
-#include <iostream>
-#include <fstream>
-using  namespace std;
 
-template <class T>
+#include "Graph.h"
+#include <fstream>
+#include "Edge.h"
+
+
 class Archivos {
 private:
-    T *t;
+    Edge *arco;
     string archivo;
     fstream f;
 public:
-    Archivos(const string& archivo);
-    void cargar();
+    Archivos(const string& file);
+    void cargar(Graph &grafo);
+    int Letra_a_Num(char letra);
 };
 
 
