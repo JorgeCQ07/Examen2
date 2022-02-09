@@ -27,8 +27,9 @@ int Graph::kruskalMST() {
 
         int set_u = ds.find(u);
         int set_v = ds.find(v);
+        string lbl = "ABCDEFGHI";
         if(set_u != set_v){
-            cout<<u<<" - "<<v<<endl;
+            cout<<lbl[u]<<" - "<<lbl[v]<<endl;
             mst_wt += it->first;
             ds.merge(set_u, set_v);
         }
