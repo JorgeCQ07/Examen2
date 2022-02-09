@@ -16,7 +16,9 @@ int main() {
     g.addEdge(7,5,6);
     g.addEdge(7,8,11);
     g.addEdge(8,6,2);
-    g.shortestPath(0);
-    cout<<"Krustal\n"<<g.kruskalMST();
+    cout<<g.shortestPath(0);
+    stringstream s;
+    cout<<"Krustal\n"<<g.kruskalMST(s);
+    cout<<endl<<s.str();
     return 0;
 }

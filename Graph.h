@@ -19,8 +19,8 @@ private:
 public:
     Graph(int V, int E);
     void addEdge(int u, int v, int w);
-    int kruskalMST();
-    void shortestPath(int s);
+    int kruskalMST(stringstream& s);
+    string shortestPath(int s);
 };
 
 
