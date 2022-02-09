@@ -7,13 +7,13 @@
 Graph::Graph(int V, int E) {
     this->E = E;
     this->V = V;
-    adj = new list<pair<Edge, int>>[V];
+    adj = new list<pair<int, int>>[V];
 }
 
-void Graph::addEdge(Edge u, Edge v, int w) {
-   // edges.push_back({w, {u, v}});
-    adj->push_back(make_pair(v, w));
-    adj->push_back(make_pair(u,w));
+void Graph::addEdge(int u, int v, int w) {
+    edges.push_back({w, {u, v}});
+    adj[u].push_back(make_pair(v, w));
+    adj[v].push_back(make_pair(u,w));
 }
 
 int Graph::kruskalMST() {
@@ -36,31 +36,30 @@ int Graph::kruskalMST() {
     return mst_wt;
 }
 
-string Graph::shortestPath(int src) {
-    stringstream ss;
-    set<pair<Edge, int>> setds;
-    vector<Edge> dist(Edge("",V).getN(), Edge("",INF));
-    setds.insert(make_pair(Edge(),src));
-    dist[src] = Edge("",0);
+void Graph::shortestPath(int s) {
+    set<pair<int, int>> setds;
+    vector<int> dist(V, INF);
+    setds.insert(make_pair(0,s));
+    dist[s] = 0;
 
-    while(!setds.empty()) {
-        pair<Edge, int> tmp = *(setds.begin());
+    while(!setds.empty()){
+        pair<int, int> tmp = *(setds.begin());
         setds.erase(setds.begin());
         int u = tmp.second;
-        list<pair<Edge, int>>::iterator i;
-        for (i = adj[u].begin(); i != adj[u].end(); i++) {
-            Edge v = (*i).first;
+        list<pair<int, int>>::iterator i;
+        for(i = adj[u].begin(); i != adj[u].end(); i++){
+            int v = (*i).first;
             int weight = (*i).second;
-            if (dist[v.getN()].getN() > dist[u].getN() + weight) {
-                if (dist[v.getN()].getN() != INF)
-                    setds.erase(setds.find(make_pair(dist[v.getN()], v.getN())));
-                dist[v.getN()].setN( dist[u].getN() + weight);
-                setds.insert(make_pair(dist[v.getN()], v.getN()));
+            if(dist[v] > dist[u] + weight){
+                if(dist[v] != INF)
+                    setds.erase(setds.find(make_pair(dist[v], v)));
+                dist[v] = dist[u] + weight;
+                setds.insert(make_pair(dist[v], v));
             }
         }
-        ss << "Vertice    Distancia desde Source\n";
-        for (int i = 0; i < V; ++i)
-            ss << i << "\t\t" << dist[i].getLabel() << endl;
-        return ss.str();
+    }
+    cout<<"Vertice Distancia desde Source"<<endl;
+    for(int i = 0; i < V; ++i){
+        cout<<i<<"\t\t" << dist[i] << endl;
     }
 }
