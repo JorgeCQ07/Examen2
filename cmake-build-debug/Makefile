@@ -224,6 +224,30 @@ Graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Graph.cpp.s
 .PHONY : Graph.cpp.s
 
+Menu.obj: Menu.cpp.obj
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
+
+Menu.i: Menu.cpp.i
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen2.dir\build.make CMakeFiles/Examen2.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... Graph.obj
 	@echo ... Graph.i
 	@echo ... Graph.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -17,7 +17,7 @@ private:
     fstream f;
 public:
     Archivos(const string& file);
-    void cargar(Graph &grafo);
+    void cargar(Graph *grafo);
     int Letra_a_Num(char letra);
 };
 

@@ -9,7 +9,7 @@ Archivos::Archivos(const string &file) {
     arco = nullptr;
 }
 
-void Archivos::cargar(Graph &grafo) {
+void Archivos::cargar(Graph *grafo) {
     string linea;
     int peso, nodo1, nodo2;
 
@@ -26,7 +26,7 @@ void Archivos::cargar(Graph &grafo) {
             nodo2 = Letra_a_Num(linea[0]);
             getline(f, linea);
             peso = stoi(linea);
-            grafo.addEdge(nodo1,nodo2,peso);
+            grafo->addEdge(nodo1,nodo2,peso);
         }
         f.close();
     }catch(invalid_argument e){cout<<e.what()<<endl;}
